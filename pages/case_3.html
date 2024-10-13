@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case_3</title>
+
+    <style>
+        :root {
+            --width: 180px;
+            --height: 80px;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        div{
+            background-color: #040494;
+            width: 250px;
+            height: 150px;
+            border-radius: 20px;
+            animation: square-rotate;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+
+        @keyframes square-rotate {
+            0%{
+
+
+            }
+            25%{
+                background-color: #002aff;
+                margin-top: 0;
+                margin-left: 81vw;
+                right: 0;
+                rotate: 180deg;
+            }
+
+            50%{
+                background-color: #fc0741;
+                margin-left: 81vw;
+                /*margin-left: calc(100vw - var(--width));*/
+                margin-top: 80vh;
+                /*margin-top: calc(100vh - var(--height));*/
+                rotate: 360deg;
+            }
+
+            75%{
+                background-color: #ef0893;
+                margin-left: 0;
+                margin-top: 80vh;
+                rotate: 180deg;
+            }
+
+            100%{
+                background-color: #fd7300;
+                margin-left: 0;
+                margin-top: 0;
+                rotate: 360deg;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

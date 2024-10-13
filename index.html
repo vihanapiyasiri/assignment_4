@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case List</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: wheat;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center; /* Center the list horizontally */
+        }
+
+        .case-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .case-list li {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center; /* Center each list item */
+        }
+
+        .case-list li a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            padding: 15px 30px;
+            border-radius: 50px;
+            position: relative;
+            width: 400px;
+            transition: background-color 0.3s ease;
+        }
+
+        .case-list li a:hover {
+            background-color: #0056b3;
+        }
+
+        .number {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-right: 15px;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 10px 20px;
+            border-radius: 50px;
+        }
+
+        .case-text {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .case-list li:nth-child(1) a {
+            background-color: #6a1b9a;
+        }
+
+        .case-list li:nth-child(2) a {
+            background-color: #3949ab;
+        }
+
+        .case-list li:nth-child(3) a {
+            background-color: #00acc1;
+        }
+
+        .case-list li:nth-child(4) a {
+            background-color: #43a047;
+        }
+
+        .case-list li:nth-child(5) a {
+            background-color: #ffca28;
+            color: #333;
+        }
+
+        .case-list li:nth-child(6) a {
+            background-color: #e53935;
+        }
+
+        @media (max-width: 768px) {
+            .case-list li a {
+                width: 100%;
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
+
+            .number {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ol class="case-list">
+            <li>
+                <a href="/pages/case_1.html" target="_blank">
+                    <span class="number">1.</span>
+                    <span class="case-text">Case 1</span>
+                </a>
+            </li>
+            <li>
+                <a href="/pages/case_2.html" target="_blank">
+                    <span class="number">2.</span>
+                    <span class="case-text">Case 2</span>
+                </a>
+            </li>
+            <li>
+                <a href="/pages/case_3.html" target="_blank">
+                    <span class="number">3.</span>
+                    <span class="case-text">Case 3</span>
+                </a>
+            </li>
+            <li>
+                <a href="/pages/case_4.html" target="_blank">
+                    <span class="number">4.</span>
+                    <span class="case-text">Case 4</span>
+                </a>
+            </li>
+            <li>
+                <a href="/pages/case_5.html" target="_blank">
+                    <span class="number">5.</span>
+                    <span class="case-text">Case 5</span>
+                </a>
+            </li>
+            <li>
+                <a href="/pages/case_6.html" target="_blank">
+                    <span class="number">6.</span>
+                    <span class="case-text">Case 6</span>
+                </a>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>

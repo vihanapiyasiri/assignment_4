@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case_1</title>
+
+    <style>
+        body{
+            margin: 0;
+        }
+
+        section{
+            height: 100vh;
+            padding: 0;
+            align-content: center;
+        }
+
+        section > div{
+            width: 200px;
+            height: 70px;
+            background: purple;
+            border-radius: 8px;
+            cursor: pointer;
+            position: relative;
+            right: 115px;
+
+        }
+
+        div:hover {
+            transform: translateX(110px);
+            transition: 1s;
+        }
+
+        div > h4 {
+            display: flex;
+            text-align: right;
+            color: white;
+            position: absolute;
+
+            top: 15%;
+            left: 7%;
+        }
+
+        div>img{
+            position: absolute;
+            right: 5%;
+            bottom: 15%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section>
+        <div>
+            <h4>Menu One</h4>
+            <img src="/assets/images/Main_One.png" alt="" width="50px">
+        </div>
+        <br>
+
+        <div>
+            <h4>Menu Two</h4>
+            <img src="/assets/images/Main_Two.png" alt="" width="50px">
+        </div>
+        <br>
+
+        <div>
+            <h4>Menu Three</h4>
+            <img src="/assets/images/Main_Three.png" alt="" width="50px">
+        </div>
+        <br>
+
+        <div>
+            <h4>Menu Four</h4>
+            <img src="/assets/images/Main_Four.png" alt="" width="50px">
+        </div>
+        <br>
+
+        <div>
+            <h4>Menu Five</h4>
+            <img src="/assets/images/Main_Five.png" alt="" width="50px">
+        </div>
+        <br>
+
+    </section>
+
+    <script src="/case_01/assets/lib/fontawesome-free-6.6.0-web/css/all.css"></script>
+</body>
+</html>
